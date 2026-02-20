@@ -4,6 +4,6 @@ This application demonstrates the usage of CRISP-DM framework and it's applicati
 
 ## Overview 
 
-The dataset we analyze is of the Used car data. 
+The dataset we analyze is of the Used car data. The Used car data consists of 
 
 
