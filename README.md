@@ -1,10 +1,18 @@
-# practical-application-2
+# Practical Application 2
 
 This application demonstrates the usage of CRISP-DM framework and it's applications to analyze a dataset and address problems the framework helps in address. 
 
 ## Overview 
 
-The dataset we analyze is of the Used car data. The Used car data consists of information from over 3 million used cars. The dataset contains information on 426k card to ensure speed of processing. 
+### CRISP-DM Framework
+
+<center>
+    <img src = images/crisp.png width = 50%/>
+</center>
+
+CRISP-DM stands for Cross Industry Specification for Data Mining. It provides a framework for understanding data, preapring data, modeling the data, evaluating the data and deploying the results from the analysis and modeling. The various stages of this process are intertwined and aroun 70% of the time in this process is spent in the data understanding and preparation phase. Some of these phases are repeated multiple times depending on the uresults from modeling and evaluation. 
+
+The dataset we analyze is of the used car data. The used car data consists of information from over 3 million used cars. The dataset contains information on 426k cars to ensure speed of processing. The dataset is available [here](data/vehicles.csv). This dataset was analyzed in Jupiter Notebook prompt [here](prompt_II.ipynb)
 
 ## Objective 
 
@@ -44,7 +52,19 @@ Analysis has been performed on the Used car dataset using python pandas library,
 - Clean Title helps. 
 - Most popular vehicle is the one with 8 cyclinders
 - There are more full sized vehicles that are priced well. They seem to be more popular
-- Expensive used cars.
 
+### General Learnings from data modeling.  
+
+- Modeling large amount of data using Regression Models with Polynomial degree greater than 10 with a column count of more than 10 takes humongous amount of time. 
+- Feature Engineering takes multiple iterations to arrive at the best possible features needed for reducing the error during predictions. 
+- Data selection and preparation is a very important stage of the whole analysis and would significantly impact the outcome. 
 
 ## Next Steps  
+
+### Recommendation for Used Car Dealership 
+
+- Dealers should focus more on EVs as they seem to be pretty popular. 
+- Focus more on new and like new cars 
+- Lower odometer value helps in obtaining maximum value from price. 
+- Automatic Transmission and Clean title are more popular. 
+- Among vehicle types, a car with 8 cylinder in more popular.
