@@ -53,6 +53,14 @@ Analysis has been performed on the Used car dataset using python pandas library,
 - Most popular vehicle is the one with 8 cyclinders
 - There are more full sized vehicles that are priced well. They seem to be more popular
 
+### Modeling techniques used
+
+- Used LinearRegression as the first step. 
+- Added Polynomial Features to it and created a Pipeline. 
+- OLS based predictions have been used. 
+- To the Pipleine a standard scaler has been added and Lasso has been used as an estimator. 
+- Final Sequential Pipeline was built using Lasso as a model selector.
+
 ### General Learnings from data modeling.  
 
 - Modeling large amount of data using Regression Models with Polynomial degree greater than 10 with a column count of more than 10 takes humongous amount of time. 
